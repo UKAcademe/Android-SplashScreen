@@ -1,5 +1,5 @@
 # Android Splash Screen
-**Smooth Splash Screen App with Animated Contents.**
+**Material Android Splash Screen**
 
 <img src="app/src/main/res/drawable/logo.png" align="left"
 width="100"
