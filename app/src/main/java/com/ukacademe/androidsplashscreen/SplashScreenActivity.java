@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    Handler handler;
+   int SPLASH_TIME = 3000; //This is 3 seconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +31,14 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splashscreen);
 
-        handler = new Handler();
-        handler.postDelayed(new Runnable() {
+       
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                 //Do any action here. Now we are moving to next page
                 Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                 startActivity(intent);
+                 //This 'finish()' is for exiting the app when back button pressed from Home page which is MainActivity
                 finish();
             }
         }, 3000);
