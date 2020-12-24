@@ -41,6 +41,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                  //This 'finish()' is for exiting the app when back button pressed from Home page which is MainActivity
                 finish();
             }
-        }, 3000);
+        }, SPLASH_TIME);
     }
 }
